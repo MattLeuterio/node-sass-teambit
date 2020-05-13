@@ -1,0 +1,39 @@
+/**********************
+
+COMMONS STYLE
+
+**********************/
+
+
+// MIXINS
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin ctn_max-width($width: 100%) {
+    max-width: $width;
+}
+
+// GENERAL RULES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include ctn_max-width();
+    margin: 0 auto;
+    background-color: $bg-color;
+    color: $primary-color;
+    font-family: $font-family;
+}
+
+h1,
+h2 {
+    font-weight: $font-semibold;
+}
