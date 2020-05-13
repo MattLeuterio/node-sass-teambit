@@ -23,6 +23,7 @@ COMMONS STYLE
 }
 
 body {
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -33,6 +34,50 @@ body {
 h1,
 h2 {
   font-weight: 600;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1150px;
+  max-width: 1150px;
+  height: 75px;
+  border-bottom: 1px solid #58402c;
+}
+
+.header__nav-ctn__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header__nav-ctn__navbar .navbar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header__nav-ctn__navbar .navbar__list a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 5px;
 }
 
 

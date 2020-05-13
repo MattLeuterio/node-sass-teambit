@@ -1,0 +1,31 @@
+.header__nav-ctn {
+
+    @include flex(row, space-between, center);
+    @include ctn_max-width($container-width);
+    height: 75px;
+    border-bottom: 1px solid $primary-color;
+
+    &__navbar {
+
+        @include flex(row, center, center);
+        font-weight: $font-semibold;
+        font-size: 14px;
+        
+        .navbar__list {
+
+            @include reset-list;
+            @include flex;
+    
+            a {
+
+                @include reset-a;
+                margin-right: 5px;
+                padding: 5px;
+                
+                
+            }
+        }
+    }
+    
+}
+
