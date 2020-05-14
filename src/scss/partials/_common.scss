@@ -30,6 +30,13 @@ COMMONS STYLE
     align-items: $f_align;
 }
 
+@mixin bg-image ($path, $position: top) {
+    background-image: url($path);
+    background-position: $position;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 @mixin btn-blue {
     @include flex($f_align: center);

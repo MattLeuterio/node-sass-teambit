@@ -21,10 +21,7 @@
         }
 
         &__img {
-            background-image: url('../../../assets/img/illustration-main.jpg');
-            background-position: top;
-            background-size: contain;
-            background-repeat: no-repeat;
+            @include bg-image ('../../../assets/img/illustration-main.jpg');
         }
 
         &__text h1 {

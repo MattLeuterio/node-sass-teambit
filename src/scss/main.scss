@@ -92,4 +92,52 @@
 }
 
 
+// SKILL 
 
+.skill {
+    @include flex(column, center, center);
+
+    &-section.left {
+        @include flex_start-or-end(start);
+    }
+
+    &-section {
+        @include flex_start-or-end(end);
+        @include ctn_max-width(90%);
+        height: 600px;
+        padding: 60px 0; 
+        
+        &__img {
+            width: 55%;
+            height: 100%;
+            @include bg-image('../../../assets/img/employee-feedback.jpg', center);
+        }
+
+        &__txt {
+            align-self: flex-start;
+            width: 30%;
+            
+            h2 {
+                font-size: 26px;
+                margin-bottom: 15px;
+            }
+            
+            p {
+                font-size: 22px;
+                margin-bottom: 40px;
+            }
+
+            a {
+                @include reset-a;
+                color: $blue;
+                display: block;
+                font-size: 22px;
+            }
+
+            img {
+                width: 400px;
+                padding: 50px 70px;
+            }
+        }
+    }
+}
