@@ -9,23 +9,75 @@
 
         @include flex(row, center, center);
         font-weight: $font-semibold;
-        font-size: 14px;
+        font-size: 13px;
         
         .navbar__list {
 
             @include reset-list;
             @include flex;
-    
-            a {
+            
+            li:first-child i {
+                font-size: 12px;
+                margin-left: 5px;
+            }
 
+            a {
+                
                 @include reset-a;
-                margin-right: 5px;
+                margin-right: 30px;
                 padding: 5px;
                 
-                
+                &:hover {
+                    color: $blue;
+                }    
             }
         }
+
+        a.btn {
+
+            @include flex(row, center, center);            
+            color: #30488f;
+            padding: 7px 9px;
+            border: 1px solid #30488f;
+            border-radius: 7px;
+
+            &:hover {
+                color: #fff;
+                background-color: $blue;
+                cursor: pointer;
+            }
+            
+
+            .btn-logo {
+                width: 17px;
+                margin-right: 5px;
+            }
+        }
+  
     }
     
 }
 
+.navbar__list__link__dropdown-menu {
+    display: none; /* jQuery */
+
+    @include reset-list;
+    background-color: #fff;
+    width: 90px;
+    padding: 0 15px 10px 5px;
+    border-radius: 7px;
+    box-shadow: inset 0 0 0 1px #00000036;
+
+
+    li {
+        cursor: pointer;
+        padding-top: 10px;
+        padding-left: 5px;
+
+        &:hover {
+            color: $blue;
+
+        }  
+
+    }
+}

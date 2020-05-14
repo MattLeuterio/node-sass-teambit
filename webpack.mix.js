@@ -20,7 +20,11 @@ mix.js('src/js/main.js', 'assets/js')
             baseDir: './',
             index: 'index.html'
         }
-   }); 
+    })
+   .options({
+    processCssUrls: false
+    });
+     
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

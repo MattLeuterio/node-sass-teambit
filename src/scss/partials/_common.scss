@@ -30,6 +30,26 @@ COMMONS STYLE
     align-items: $f_align;
 }
 
+
+@mixin btn-blue {
+    @include flex($f_align: center);
+    color: #fff;
+    background-color: $blue;
+    border: 0;
+    padding: 10px 23px;
+    border-radius: 7px;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+
+    img {
+        width: 17px;
+        margin-right: 2px;
+    }
+}
+
+
 // GENERAL RULES
 
 * {
@@ -47,8 +67,17 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-weight: $font-semibold;
 }
 
 // UTILITY
+
+.u_pRelative {
+    position: relative;
+}
+
+.u_pAbsolute {
+    position: absolute;
+}

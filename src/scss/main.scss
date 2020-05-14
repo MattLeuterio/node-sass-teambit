@@ -9,8 +9,87 @@
 // Partials
 @import 'partials/variables';
 @import 'partials/common';
-@import 'partials/main';
 @import 'partials/header.scss';
 @import 'partials/navbar.scss';
 @import 'partials/footer.scss';
+
+// HOW WORK
+
+.how-work {
+    @include flex(column , center, center);
+    background-color: $secondary-color;
+    padding: 80px 0;
+
+}
+
+.how-work__ctn {
+    @include ctn_max-width($container-width);
+    @include flex(column, center, center);
+    
+    #problem {
+        border-bottom: 1px solid $grey;
+    }
+
+    #solution {
+        margin-top: 80px;
+    }
+
+
+    .how-work_section {
+        @include flex(column , center, center);
+        @include ctn_max-width($container-width);
+
+
+        h2.how-work_section {
+            font-size: 26px;
+            text-align: center;
+            width: 60%;
+        }
+
+        &__problems {
+            @include flex(row, center, center);
+            padding: 50px 0 0;
+            width: 60%;
+
+            .problems-ctn {
+
+                @include flex(column, center, center);
+                padding: 0 30px;
+                text-align: center;
+
+            }
+
+            .problems_img {
+
+                @include flex(row, center, center);
+                width: 140px;
+                height: 170px;
+
+                img {
+                    width: 100%;
+                }
+
+                img.safe-img {
+                    width: 60px;
+                }
+
+            }
+            
+        }
+       
+        .how-work_section__illustration {
+            width: 25%;
+            margin: 130px 0;
+        
+            img {
+                width: 100%;
+            }
+        
+        }
+
+    }
+
+}
+
+
 
