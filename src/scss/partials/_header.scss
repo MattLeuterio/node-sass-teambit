@@ -56,10 +56,6 @@
 
 .jumbotron-ctn__text__btns {
     @include flex($f_align: center);
-    
-    .btn-blue {
-        @include btn-blue;        
-    }
 
     h4 {
         font-size: 13px;

@@ -24,17 +24,3 @@ $font-light: 300;
 
 $container-width: 1150px;
 
-@mixin flex_start-or-end($justify: start) {
-
-    @if $justify == start {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    } @else {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        align-items: center;
-    }
-}

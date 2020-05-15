@@ -30,11 +30,41 @@ COMMONS STYLE
     align-items: $f_align;
 }
 
+@mixin flex_start-or-end($justify: start) {
+
+    @if $justify == start {
+        flex-direction: row;     
+    } @else { 
+        flex-direction: row-reverse;    
+    }
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
 @mixin bg-image ($path, $position: top) {
     background-image: url($path);
     background-position: $position;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@mixin bg-skill-section ($section) {
+    @if $section == communication {
+        @include bg-image('../../../assets/img/employee-feedback.jpg', center);
+    } @else if $section == surveys {
+        @include bg-image('../../../assets/img/employee-survey.jpg', center);
+    } @else if $section == performance {
+        @include bg-image('../../../assets/img/performance-review.jpg', center);
+    } @else if $section == recognition {
+        @include bg-image('../../../assets/img/employee-recognition.jpg', center);
+    }
+    
+    width: 55%;
+    height: 100%;
 }
 
 
@@ -47,6 +77,7 @@ COMMONS STYLE
     border-radius: 7px;
 
     &:hover {
+        cursor: pointer;
         background-color: $dark-blue;
     }
 
@@ -87,4 +118,8 @@ h3 {
 
 .u_pAbsolute {
     position: absolute;
+}
+
+.btn-blue {
+    @include btn-blue;        
 }

@@ -96,6 +96,7 @@
 
 .skill {
     @include flex(column, center, center);
+    padding: 50px 0;
 
     &-section.left {
         @include flex_start-or-end(start);
@@ -105,14 +106,9 @@
         @include flex_start-or-end(end);
         @include ctn_max-width(90%);
         height: 600px;
-        padding: 60px 0; 
+        padding: 60px 0;
+        margin-bottom: 50px; 
         
-        &__img {
-            width: 55%;
-            height: 100%;
-            @include bg-image('../../../assets/img/employee-feedback.jpg', center);
-        }
-
         &__txt {
             align-self: flex-start;
             width: 30%;
@@ -135,9 +131,119 @@
             }
 
             img {
-                width: 400px;
-                padding: 50px 70px;
+                width: 300px;
+                margin-top: 50px;
             }
         }
     }
 }
+
+// backgrounds sections
+.communication  {
+    .skill-section__img {
+        @include bg-skill-section (communication);
+    }   
+}
+.surveys  {
+    .skill-section__img {
+        @include bg-skill-section (surveys);
+    }   
+}
+.performance  {
+    .skill-section__img {
+        @include bg-skill-section (performance);
+    }   
+}
+.recognition  {
+    .skill-section__img {
+        @include bg-skill-section (recognition);
+        height: 600px;
+    }   
+}
+
+
+// Review section
+.review {
+    @include flex(column, center, center);
+    width: 100%;
+    padding: 100px 0;
+    background-color: $secondary-color;
+
+    &-ctn {
+        @include ctn_max-width(628px);
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        .review-box {
+            height: 442px;
+            background: #fff;
+            margin: 35px 0;
+            padding: 30px 70px 30px 40px;
+            border: 1px solid $grey;
+            border-radius: 7px;
+
+            &__mark {
+                width: 37px;
+                top: -23px;
+                left: -1px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            &__sign {
+                @include flex;
+                margin-top: 20px;
+
+                img {
+                    width: 38px;
+                    margin-right: 10px;
+                }
+
+                &__info {
+
+                    h3 {
+                        font-size: 14px;
+                        font-weight: $font-light;
+                        color: $blue;
+                    }
+
+                    h4 {
+                        font-size: 11px;
+                        font-weight: $font-light;
+                    }
+                }
+            }
+            
+        }
+
+    &__sign-up {
+        @include flex(row, center, center);
+
+        h4 {
+            font-size: 13px;
+            font-weight: 400;
+            color: #bdb5af;
+            padding: 8px;
+        }
+
+    }
+    
+    h5 {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    }
+}
+
+
