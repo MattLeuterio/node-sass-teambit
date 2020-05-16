@@ -9,18 +9,16 @@
     <!-- FontAwesome -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
 </head>
-<body>
-    
-    <!-- Main Header -->
-    <header class="main-header">
-        <!-- Contaneir Header -->
-        <nav class="header__nav-ctn">
-            <div class="header__nav-ctn__logo">
+<body class="u_pRelative">
+    <!-- nav -->
+    <nav class="nav-ctn">
+        <div class="nav">
+            <div class="nav__logo">
                 <img src="assets/img/logo.svg" alt="" class="logo">
             </div>
-            <div class="header__nav-ctn__navbar">
+            <div class="nav__navbar">
                 <ul class="navbar__list">
-                    <li class="navbar__list__link u_pRelative">
+                    <li class="navbar__list__link dropdown-here u_pRelative">
                         <a href="#">
                         Solutions<i class="fas fa-caret-down"></i>
                         </a>
@@ -35,10 +33,18 @@
                     <li class="navbar__list__link"><a href="#">Blog</a></li>
                     <li class="navbar__list__link"><a href="#">Sign in</a></li>
                 </ul>
-                <a class="btn"><img src="assets/img/google-logo.svg" alt="logo google" class="btn-logo"> Sign up</a>
+                <a class="btn">
+                    <img src="assets/img/google-logo.svg" alt="logo google" class="btn-logo ">
+                    Sign up
+                </a>
             </div>
-        </nav>
-
+        </div>
+    </nav>
+   
+    
+    <header class="main-header">
+        <!-- Contaneir Header -->
+    
         <!-- jumbotron -->
         <div class="header__jumbotron">
             <div class="jumbotron-ctn">
@@ -246,9 +252,70 @@
         </div>
     </footer>
 
+    <!-- Chat Icon -->
+    <section class="chat-icon u_pAbsolute">
+        <img class="icon-chat" src="assets/img/chat.svg" alt=""></>
+        <img class="icon-arrow" src="assets/img/arrow-down.svg" alt=""></>
+    </section>
+
+    <!-- Chat Section -->
+    <section class="chat u_pAbsolute">
+        <div class="chat-ctn u_pRelative">
+            <div class="chat__header">
+                <div class="chat__header__info">
+                    <img src="assets/img/logo.svg" alt="">
+                    <h2>Welcome 👋</h2>
+                    <p>We help you understand and develop your team with regular feedback</p>
+                </div>
+            </div>
+            <div class="chat__main">
+                <div class="chat__main__ctn start">
+                    <h3>Start a conversation</h3>
+                    <h4>The team typically replies in a few hours.</h4>
+                    <div class="send">
+                        <img src="assets/img/alex.png" alt="">
+                        <button class="btn__send-us">
+                            <i class="fas fa-paper-plane"></i>
+                            Send us a message 
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__main__ctn find">
+                    <h4>Find an answer yourself</h4>
+                    <span class="u_pRelative">
+                        <input class="chat-section__input" type="text" placeholder="Search for articles...">
+                        <span class="icon-send u_pAbsolute"><i class="fas fa-chevron-right"></i></span>
+                    </span>
+                </div>
+                <div class="chat__main__ctn subscribe">
+                    <h3>Find an answer yourself</h3>
+                    <h4>Join people from companies like intercom, Spotify and
+                        dropbox who get our weekly weekly newsletter on how 
+                        to build better teams
+                    </h4>
+                    <span class="u_pRelative">
+                        <input class="chat-section__input" type="text" placeholder="name@example.com">
+                        <span class="icon-send u_pAbsolute"><i class="fas fa-chevron-right"></i></span>
+                    </span>
+                </div>
+                <div class="chat__main__ctn check-out">
+                    <img src="assets/img/illustration-main.jpg" alt="">
+                    <div class="check-out__text">
+                        <h3>Check out our latest blogspot</h3>
+                        <h4>How teams can be more productive 
+                            by killing 8-houre workday
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
 
 
     <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

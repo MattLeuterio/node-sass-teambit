@@ -1,5 +1,6 @@
 .main-header {
-    @include flex(column, center, center)
+    @include flex(column, center, center);
+    padding-top: 75px;
 }
 
 .header__jumbotron {

@@ -123,3 +123,25 @@ h3 {
 .btn-blue {
     @include btn-blue;        
 }
+
+/*******************
+
+    ACTIONS
+
+********************/
+
+// nav
+
+.navbar__list__link__dropdown-menu.show-dropdown {
+    display: block;
+}
+
+// chat
+.chat.active-chat {
+    opacity: 1;
+    height: 700px; 
+}
+
+.chat-scrolled {
+    opacity: 0;
+}

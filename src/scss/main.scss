@@ -12,6 +12,7 @@
 @import 'partials/header.scss';
 @import 'partials/navbar.scss';
 @import 'partials/footer.scss';
+@import 'partials/chat.scss';
 
 // HOW WORK
 
@@ -237,10 +238,19 @@
     }
     
     h5 {
+        cursor: pointer;
         text-align: center;
         font-size: 13px;
         font-weight: 400;
         margin-top: 20px;
+        
+        i {
+            margin-left: 5px;
+        }
+
+        &:hover {
+            color: $dark-blue;
+        }
     }
 
     }
